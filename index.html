@@ -1,0 +1,45 @@
+<!DOCTYPE html><html lang="en"><head>
+  <title>Cell growth</title>
+  <script src="libraries/p5.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8">
+  <style type="text/css">
+    html {
+      font-size: 10px;
+    }
+    body {
+      margin: 2% 15%;
+      font-size: 1.6rem;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    canvas {
+      vertical-align: top;
+      margin: 1rem 1rem;
+      border: 2px double black;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Cell growth</h1>
+    <h2>by Hamayoon Khan, 2022</h2>
+    <div>Add Number of cells and Viruses and start the animation</div>
+    <div class="inline">
+    <div>No. of Cells: <input id="no_cells" type="text"></div>
+    <div>No. of Virus: <input id="no_virus" type="text"><button id="start">Start</button></div>
+    </div>
+        <div id="cellshape" class="inline"> Cell Type: </div>
+        <div id="virusshape" class="inline"> Virus Type: </div>
+        <br>
+        <div id="cells" class="inline"></div>
+        <div id="viruses" class="inline"></div>
+        <div id="cells_dead" class="inline"></div>
+        <div id="cells_birth" class="inline"></div>
+        <div id="med_kills" class="inline"></div>
+      </div>
+      <div id="Virus_Won" class="hidden">Viruses Won</div>
+      <div id="Cells_Won" class="hidden">Cells Won</div>
+  </div>
+  <script src="cell.js"></script>
+  <script src="sketch.js"></script>
+</body></html>
